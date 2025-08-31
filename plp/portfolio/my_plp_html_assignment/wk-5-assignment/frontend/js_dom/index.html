@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+        <h3>AURA</h3>
+        </div>
+        <nav class="nav">
+
+            <ul class="sidebar">
+                <li onclick="hideSideBar()"><a href="#"><img src="/portfolio/my_plp_html_assignment/wk-5-assignment/frontend/cancel.svg.svg" class="image"></a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#"><button class="Sbtn2">Shop Now</button></a></li>
+
+            </ul>
+
+            <ul class="mainNav">
+              
+                <li class="hideOnMobile"><a href="#">HOME</a></li>
+                <li class="hideOnMobile"><a href="#">ABOUT</a></li>
+                <li class="hideOnMobile"><a href="#">BLOG</a></li>
+                <li class="hideOnMobile"><a href="#">PRODUCTS</a></li>
+                <li class="hideOnMobile"><a href="#"><button class="Sbtn">Shop Now</button></a></li>
+                <li onclick="showSideBar()"><img src="/portfolio/my_plp_html_assignment/wk-5-assignment/frontend/menu.png" class="image1"></li>
+                 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <p id="welcome"></p>
+    <button class="btn" onclick="clickMe()">Subscribe</button>
+    <div id="result"></div>
+    </main>
+   <script src="script.js">
+
+        
+    </script>
+</body>
+</html>
