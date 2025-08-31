@@ -3,17 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+   <link rel="stylesheet" href="/style.css">
+    <title>Dom</title>
 </head>
 <body>
-    <p id="welcome"></p>
-    <button id="btn" onclick="clickMe()">Subscribe</button>
-    <div id="result"></div>
-   
-   <script src="script.js">
-
+    <header class="header">
         
-    </script>
+            <h2 class="logo">AURA</h2>
+        <nav>
+            <ul class="sidebar">
+                 <li onclick="hideSideBar()"><a href="#"><img src="/cancel.svg.svg" class="cancel"</a></li>
+                <li><a href="#"></a>HOME</li>
+                <li><a href="#"></a>ABOUT</li>
+                <li><a href="#"></a>BLOG</li>
+                <li><a href="#"></a>PRODUCT</li>
+                <li><a href="#"><button class="btn1"> SIGN UP</button></a></li>
+
+            </ul>
+
+             <ul class="mainNav">
+                <li class="hideOnMobile"><a href="#"></a>HOME</li>
+                <li class="hideOnMobile"><a href="#"></a>ABOUT</li>
+                <li class="hideOnMobile"><a href="#"></a>BLOG</li>
+                <li class="hideOnMobile"><a href="#"></a>PRODUCT</li>
+                <li class="hideOnMobile"><a href="#"><button class="btn"> SIGN UP</button></a></li>
+                <li onclick="showSideBar()"><a href="#"><img src="/menu.png" class="image"></a></li>
+
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="result"></div>
+        <button onclick="clickMe()" id="click">Subscribe</button>
+        <p class="list"></p>
+    </main>
+
 </body>
+<script src="/script.js"></script>
 </html>

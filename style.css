@@ -1,25 +1,143 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
-h1,h2,h3,h4, p{
-    padding: 0;
-    margin: 0;
-}
+
 body {
-    background: white;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: darkblue;
+  
+}
 
 img{
     max-width: 100%;
 }
 
-#btn{
-    margin-top: 1rem;
-    background: black;
-    padding:.75rem;
-    font-size: .85rem;
-    color: white;
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    padding: 2rem;
+    background: white;
+    height: 80px;
+    width: 100%;
+}
+
+.logo{
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.mainNav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 1.2rem;
+    color: #333;
+    font-weight: 500;
+
+    
+}
+
+
+
+.mainNav a{
+    text-decoration: none;
+  
+}
+
+.btn, .btn1 {
+    padding: .6rem;
+    background: darkblue;
     border: none;
     border-radius: 4px;
+    color: white;
+    font-weight: 600;
+
 }
+.sidebar{
+    display: none;
+    flex-direction: column;
+    padding: 1.5rem;
+    height: 100vh;
+    width: 100%;
+    background: white;
+    position: fixed;
+    top:0;
+    right: 0;
+    
+}
+
+.sidebar a{
+    color: black;
+    
+}
+
+.sidebar li{
+    list-style: none;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid black;
+}
+.image{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: none;
+    
+}
+
+.cancel{
+    width: 1rem;
+    height: 1rem;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+
+/* Button Section*/
+
+#click{
+    color: white;
+    background-color: black;
+    display: flex;
+    padding: .6rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 4px;
+    margin-left: 1rem;
+}
+
+
+@media(max-width:650px){
+   .image{
+    display: block;
+   }
+ 
+   .hideOnMobile{
+    display: none;
+   }
+}
+
+@media(max-width:799px){
+   
+   .hideOnMobile{
+    font-size: 1rem;
+   }
+}
+@media(min-width:800px){
+   
+   .hideOnMobile{
+    font-size: 1.2rem;
+   }
+
+   .logo{
+    font-size: 1.2rem;
+   }
+}
+
+

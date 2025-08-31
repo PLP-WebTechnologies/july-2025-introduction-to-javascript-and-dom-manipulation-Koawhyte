@@ -1,59 +1,70 @@
-//Question Two
-let ButtonElement = document.getElementById('btn');
 
-//First Function
-function clickMe(){
+function showSideBar(){
+    let Bar = document.querySelector('.sidebar');
 
-    ButtonElement.textContent = "Subscribed";
-    ButtonElement.style.background = "#f4f4f4";
-    ButtonElement.style.color = "#333";
+    Bar.style.display ='flex'
 
 };
 
-clickMe();
+function hideSideBar(){
+    let hideBar = document.querySelector('.sidebar');
 
-//Second Function
-let welcome = document.getElementById('welcome');
-function greet(name){
-   
-   welcome.innerHTML = `Hello, ${name} Nice to meet you`;
+    hideBar.style.display ='none'
+
 };
 
-greet("Koawhyte");
+function showResult(){
+
+let result = document.querySelector(".result");
+result.style.color = 'white'
+result.style.marginTop ='90px'
+result.style.marginLeft ='16px'
 
 
-//Question one
-let result = document.getElementById('result');
 let age = 16;
-
-
-
-//first variable and condition
-if(age >=18) {
-result.innerHTML = "Can Vote";
+let adultAge = 18 - age;
+if(age >= 18){
+    result.innerHTML = "can vote"
+    
 }
 
 else{
-    let yearsToWait = 18 - age;
-    result.innerHTML = `you are too young, wait till ${yearsToWait} years time`;
+    result.innerHTML = `your not up to voting age wait till ${adultAge} years time`
 }
-//second variable and condition
-let x = 10;
-if(x==="10"){
-    console.log("yah, i said so!!")
-}
-else{
-    console.log("It just can't be")
-}
-
-//Question Three
-//loop1
-myFruits = ["Apple", "Banana", "Oranges", "Cherry", "pineapples"]
-for(let i = 0; i< myFruits.length; i++ ){
-    console.log(`I love ${myFruits[i]}`);
 };
 
-//loop2
-for(let i =0; i<10; i++){
-    console.log(`This is number ${i}`)
+showResult();
+
+function clickMe(){
+let ButtonElement =document.getElementById('click');
+
+if(ButtonElement.textContent === 'Subscribe'){
+    ButtonElement.innerHTML = 'Subscribed'
+    ButtonElement.style.background ='gray'
+    ButtonElement.style.color = 'white'
+}
+else{
+    ButtonElement.innerHTML = 'Subscribe'
+    ButtonElement.style.background ='black'
+    ButtonElement.style.color = 'white'
+
+}
+}
+
+
+
+
+let myFruit = ['Banana', 'Apple', 'Orange', 'Cherry','Pineapple'];
+
+
+for(let i =0; i < myFruit.length; i++){
+    console.log(`I love ${myFruit[i]}`);
+    
+  
+};
+
+for(let i =0; i < 10; i++){
+    console.log(`This is number ${[i]}`);
+    
+  
 };
